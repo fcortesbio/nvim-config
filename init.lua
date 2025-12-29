@@ -4,7 +4,7 @@ vim.opt.shiftwidth = 4 		-- Number of spaces to use for each step of (auto) inde
 vim.opt.expandtab = true 	-- Convert tabs to spaces
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "html", "javascript", "css", "typescript" },
+  pattern = { "html", "javascript", "javascriptreact", "css", "typescript", "typescriptreact" },
   callback = function()
     vim.opt_local.shiftwidth = 2
     vim.opt_local.tabstop = 2
